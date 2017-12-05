@@ -1,4 +1,64 @@
 // Magme custom style
-.magme {
-    color: blue;
+
+// Mixins
+
+@mixin bgimage-jpg($name) {
+  $url:"../img/#{$name}.jpg";
+  background: url($url);
+}
+
+@mixin bgimage-png($name) {
+  $url:"../img/#{$name}.png";
+  background: url($url);
+}
+
+
+// Intro page
+
+.intro-2 {
+    @include bgimage-jpg('start_bg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.btn .fa {
+    margin-left: 3px;
+}
+
+h6 {
+    line-height: 1.7;
+}
+.hm-gradient .full-bg-img {
+    background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.6)), to(rgba(29, 210, 177, 0.6)));
+    background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
+    background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
+}
+
+.accept-btn{
+  background: green;
+}
+
+.deny-btn{
+  background: red;
+}
+
+
+// Media Queries
+
+
+@media (max-width: 450px) {
+    .margins {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+}
+@media (max-width: 740px) {
+    .full-height,
+    .full-height body,
+    .full-height header,
+    .full-height header .view {
+        height: 1020px;
+    }
 }

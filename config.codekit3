@@ -325,6 +325,13 @@
 		"oAP": "\/index.html",
 		"oF": 0
 		},
+	"\/index2.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/index2.html",
+		"oF": 0
+		},
 	"\/js\/bootstrap.js": {
 		"ft": 64,
 		"ma": 0,
@@ -405,6 +412,16 @@
 		"oA": 0,
 		"oAP": "\/README.txt",
 		"oF": 0
+		},
+	"\/sass\/mdb.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/sass\/mdb-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"\/sass\/mdb.scss": {
 		"aP": 0,
